@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item android:id="@+id/nav_pay"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="@string/payment"/>
+
+    <item android:id="@+id/nav_wallet"
+        android:icon="@drawable/ic_baseline_wallet_24"
+        android:title="@string/wallet"/>
+    <item android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/accountsettings"/>
+
+
+
+</group>
+    <item android:title="@string/customer_care">
+        <menu>
+            <item android:id="@+id/nav_help"
+                android:icon="@drawable/ic_baseline_help_24"
+                android:title="@string/help"/>
+            <item android:id="@+id/nav_privacy"
+                android:icon="@drawable/ic_baseline_privacy_tip_24"
+                android:title="@string/privacy"/>
+        </menu>
+    </item>
+</menu>

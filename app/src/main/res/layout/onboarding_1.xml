@@ -1,0 +1,120 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/page_onboarding_1_ek1"
+	android:layout_marginTop="0dp"
+	android:layout_marginStart="0dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/__bg__onboarding_1_ek2"
+		android:layout_width="443dp"
+		android:layout_height="898dp"
+		android:background="@drawable/majestic_lukas_ipsd4z55_rw_unsplash_1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+
+	<TextView
+		android:id="@+id/e_mat"
+		android:textSize="18sp"
+		android:textColor="@color/e_mat_color"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="50dp"
+		android:layout_width="58dp"
+		android:layout_height="35dp"
+		android:text="@string/e_mat_string"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/text"
+		android:textSize="18sp"
+		android:textColor="@color/text_color"
+		android:layout_marginLeft="143dp"
+		android:layout_marginTop="62dp"
+		android:layout_width="23dp"
+		android:layout_height="35dp"
+		android:text="@string/text_string"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/convenient_cheap_rides"
+		android:layout_width="310dp"
+		android:layout_height="110dp"
+		android:layout_marginStart="28dp"
+		android:layout_marginTop="546dp"
+		android:text="@string/convenient_cheap_rides_string"
+		android:textColor="@color/text_color"
+		android:textSize="32sp"
+		app:layout_constraintBottom_toTopOf="@+id/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device_"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0" />
+
+	<TextView
+		android:id="@+id/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device_"
+		android:layout_width="354dp"
+		android:layout_height="52dp"
+		android:layout_marginTop="632dp"
+		android:text="@string/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device__string"
+		android:textColor="@color/text_color"
+		android:textSize="14sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/frame_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="709dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+
+		<RelativeLayout
+			android:id="@+id/buttons"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp">
+
+<!--			<View-->
+<!--				android:id="@+id/button_container"-->
+<!--				android:layout_width="335dp"-->
+<!--				android:layout_height="40dp"-->
+<!--				android:layout_marginStart="0dp"-->
+<!--				android:layout_marginTop="0dp"-->
+<!--				android:background="@drawable/button_container_shape" />-->
+
+			<TextView
+				android:id="@+id/button"
+				android:layout_width="349dp"
+				android:layout_height="53dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="-3dp"
+				android:layout_marginTop="0dp"
+				android:gravity="center"
+				android:text="@string/button_string"
+				android:textColor="@color/text_color"
+				android:textSize="18sp"
+				android:background="@drawable/button_container_shape" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

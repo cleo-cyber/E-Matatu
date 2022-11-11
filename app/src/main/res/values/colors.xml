@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- onboarding_1 colors -->
+
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="lightgray">#F4F4F4</color>
+
+	<color name="__bg__onboarding_1_ek2_color">#2C2C2C</color>
+	<color name="e_mat_color">#2EDABB</color>
+	<color name="text_color">#FFFFFF</color>
+	<color name="text_ek1_color">#A3A3A3</color>
+	<color name="button_container_ek4_color">#ffffff</color>
+	<color name="input_container_color">#F4F4F4</color>
+	<color name="home_ek4_color">#F89828</color>
+	<color name="_bg__invalid_email_color">#2C2C2C</color>
+	<color name="forgot_password_color">#FFFFFF</color>
+	<color name="we_ll_send_a_password_reset_link_to_your_email__color">#A3A3A3</color>
+	<color name="_bg__login_fail_color">#2C2C2C</color>
+	<color name="login_color">#FFFFFF</color>
+	<color name="label_color">#2EDABB</color>
+	<color name="placeholder_ek1_color">#F4F4F4</color>
+	<color name="_don_t_have_an_account__register_color">#A3A3A3</color>
+	<color name="border_color">#ffffff</color>
+    <color name="darkgeen">#003300</color>
+    <color name="trans_gray">#CED4D3</color>
+</resources>

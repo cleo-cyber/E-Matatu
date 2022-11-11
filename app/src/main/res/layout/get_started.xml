@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/page_get_started_ek1"
+	android:layout_marginTop="0dp"
+	android:layout_marginStart="0dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/_bg__get_started_ek2"
+		android:layout_width="443dp"
+		android:layout_height="898dp"
+		android:background="@drawable/_bg__get_started_ek2_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/e_mat_ek4"
+		android:textSize="18sp"
+		android:textColor="@color/e_mat_color"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="50dp"
+		android:layout_width="58dp"
+		android:layout_height="35dp"
+		android:text="@string/e_mat_ek4_string"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+
+	<TextView
+		android:id="@+id/get_started_ek3"
+		android:layout_width="182dp"
+		android:layout_height="68dp"
+		android:layout_marginTop="396dp"
+		android:text="@string/get_started_ek3_string"
+		android:textColor="@color/text_color"
+		android:textSize="28sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/get_started_and_enjoy_the_awesome_local_food_right_at_your_home_"
+		android:layout_width="354dp"
+		android:layout_height="52dp"
+		android:layout_marginTop="500dp"
+		android:text="@string/get_started_and_enjoy_convenient_affordable_rides_now"
+		android:textColor="@color/text_color"
+		android:textSize="14sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.491"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<RelativeLayout
+		android:id="@+id/buttons_ek3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="656dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/button_ek3"
+		android:layout_width="349dp"
+		android:layout_height="53dp"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginTop="24dp"
+		android:background="@drawable/button_container_ek3_shape"
+		android:gravity="center"
+		android:text="@string/button_ek3_string"
+		android:textColor="@color/text_color"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.451"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/get_started_and_enjoy_the_awesome_local_food_right_at_your_home_" />
+
+	<TextView
+		android:id="@+id/button_ek4"
+		android:layout_width="349dp"
+		android:layout_height="53dp"
+		android:layout_gravity="center_horizontal|center"
+		android:background="@drawable/button_container_ek3_shape"
+		android:gravity="center"
+		android:text="@string/button_ek4_string"
+		android:textColor="@color/text_color"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/buttons_ek3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

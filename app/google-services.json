@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "876329126060",
+    "project_id": "e-mat-96984",
+    "storage_bucket": "e-mat-96984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876329126060:android:017757e724c5bf8c963709",
+        "android_client_info": {
+          "package_name": "com.emat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876329126060-f3uh5apf74849mv52i8qtnbvcfarnadr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emat",
+            "certificate_hash": "b82dbe9820b00fa97c86007a77cb54eb05e15c6e"
+          }
+        },
+        {
+          "client_id": "876329126060-1rpf17ikfalfat2do77g2jsp7p2af2np.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV1036uxlBOD9mS9vaezhZAxoNUEM5mEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876329126060-1rpf17ikfalfat2do77g2jsp7p2af2np.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

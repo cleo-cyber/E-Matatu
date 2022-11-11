@@ -1,0 +1,93 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/page_onboarding_3_ek1"
+	android:layout_marginTop="0dp"
+	android:layout_marginStart="0dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/__bg__onboarding_3_ek2"
+		android:layout_width="443dp"
+		android:layout_height="898dp"
+		android:background="@drawable/sarah_noltner_pm9397vvffy_unsplash_1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<TextView
+		android:id="@+id/e_mat_ek3"
+		android:textSize="18sp"
+		android:textColor="@color/e_mat_color"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="50dp"
+		android:layout_width="58dp"
+		android:layout_height="35dp"
+		android:text="@string/e_mat_ek3_string"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/grab_the_most_convenient_deals_around"
+		android:layout_width="349dp"
+		android:layout_height="111dp"
+		android:layout_marginStart="28dp"
+		android:layout_marginTop="516dp"
+		android:text="@string/grab_the_most_convenient_deals_around_string"
+		android:textColor="@color/text_color"
+		android:textSize="32sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/we_understand_every_student_and_therefore_strive_to_offer_the_most_rides_"
+		android:layout_width="354dp"
+		android:layout_height="52dp"
+		android:layout_marginTop="630dp"
+		android:text="@string/we_understand_every_student_and_therefore_strive_to_offer_the_most_rides__string"
+		android:textColor="@color/text_color"
+		android:textSize="14sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/buttons_ek2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="722dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+<!--		<View-->
+<!--			android:id="@+id/button_container_ek2"-->
+<!--			android:layout_width="335dp"-->
+<!--			android:layout_height="40dp"-->
+<!--			android:layout_marginStart="0dp"-->
+<!--			android:layout_marginTop="0dp"-->
+<!--			android:background="@drawable/button_container_ek2_shape" />-->
+
+		<TextView
+			android:id="@+id/button_ek2"
+			android:layout_width="349dp"
+			android:layout_height="53dp"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginStart="-3dp"
+			android:layout_marginTop="0dp"
+			android:gravity="center"
+			android:text="@string/button_ek2_string"
+			android:textColor="@color/text_color"
+			android:textSize="18sp"
+			android:background="@drawable/button_container_ek1_shape"/>
+
+	</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
