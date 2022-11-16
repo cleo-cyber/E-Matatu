@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/white"
+        />
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Payment"
+        android:textColor="@color/darkgeen"
+        android:layout_below="@+id/arrow_back"
+        android:paddingLeft="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_below="@id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="17dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:backgroundTint="@color/trans_gray"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+        <TextView
+
+            android:id="@+id/Ecash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emat Cash"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:id="@+id/cashholder"
+            android:layout_below="@+id/Ecash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="KES 0.00"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:letterSpacing="0.3"
+            android:textFontWeight="900"
+
+            />
+        <ImageButton
+            android:layout_below="@id/Ecash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_chevron_right_24"
+            android:backgroundTint="@color/trans_gray"
+            android:layout_alignParentEnd="true"
+
+
+            />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cashholder"
+                android:layout_marginLeft="10dp"
+                android:text="Add funds"
+                android:textAllCaps="false"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/darkgeen"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/payMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment methods"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/cardView"
+        android:paddingLeft="15dp"
+        />
+    <ImageButton
+        android:id="@+id/cashBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cash"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/payMethods"
+        android:layout_marginLeft="17dp"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:textSize="20sp"
+        android:layout_below="@id/payMethods"
+        android:layout_toEndOf="@+id/cashBtn"
+        android:layout_marginTop="9dp"
+        android:textFontWeight="500"
+        />
+    <ImageButton
+        android:id="@+id/pointsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_round_currency_ruble_24"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/cashBtn"
+        android:layout_marginLeft="17dp"
+        />
+    <TextView
+        android:id="@+id/pointTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:layout_below="@id/cashBtn"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/pointsBtn"
+        android:layout_marginTop="9dp"
+        android:textFontWeight="500"
+        />
+
+</RelativeLayout>

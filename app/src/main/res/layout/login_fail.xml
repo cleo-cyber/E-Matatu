@@ -1,0 +1,236 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/_bg__login_fail"
+		android:layout_width="411dp"
+		android:layout_height="891dp"
+		android:background="@drawable/_bg__login_fail_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="50dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/vector"
+			android:layout_width="22dp"
+			android:layout_height="22dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:contentDescription="vector"
+			android:src="@drawable/vector" />
+
+		<ImageView
+			android:id="@+id/vector_ek1"
+			android:layout_width="11.67dp"
+			android:layout_height="11.67dp"
+			android:layout_marginStart="5.17dp"
+			android:layout_marginTop="5.17dp"
+			android:contentDescription="vector_ek1"
+			android:src="@drawable/vector_ek1" />
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/inputs"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="440dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/label"
+			android:layout_width="40dp"
+			android:layout_height="22dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="0dp"
+			android:text="@string/label_string"
+			android:textColor="@color/label_color"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/input"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="19dp">
+
+			<View
+				android:id="@+id/input_container"
+				android:layout_width="335dp"
+				android:layout_height="40dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/input_container_shape" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/inputs_ek1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="529dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/label_ek1"
+			android:layout_width="57dp"
+			android:layout_height="22dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="0dp"
+			android:text="@string/label_ek1_string"
+			android:textColor="@color/label_color"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/input_ek1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="19dp">
+
+			<View
+				android:id="@+id/input_container_ek1"
+				android:layout_width="335dp"
+				android:layout_height="40dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/input_container_ek1_shape" />
+
+			<TextView
+				android:id="@+id/placeholder_ek1"
+				android:layout_width="314dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="0dp"
+				android:text="@string/placeholder_ek1_string"
+				android:textColor="@color/placeholder_ek1_color"
+				android:textSize="14sp" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:id="@+id/eye_open"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="303dp"
+			android:layout_marginTop="28dp">
+
+			<ImageView
+				android:id="@+id/vector_ek2"
+				android:layout_width="22dp"
+				android:layout_height="22dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:contentDescription="vector_ek2"
+				android:src="@drawable/vector_ek2" />
+
+			<ImageView
+				android:id="@+id/vector_ek3"
+				android:layout_width="19.83dp"
+				android:layout_height="16.5dp"
+				android:layout_marginStart="1.08dp"
+				android:layout_marginTop="2.75dp"
+				android:contentDescription="vector_ek3"
+				android:src="@drawable/vector_ek3" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/buttons"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="669dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<View
+			android:id="@+id/button_container"
+			android:layout_width="335dp"
+			android:layout_height="40dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:background="@drawable/button_container_shape" />
+
+		<TextView
+			android:id="@+id/button"
+			android:layout_width="349dp"
+			android:layout_height="53dp"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginLeft="-3dp"
+			android:layout_marginTop="0dp"
+			android:gravity="center"
+			android:text="@string/button_string"
+			android:textColor="@color/login_color"
+			android:textSize="18sp" />
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/_don_t_have_an_account__register"
+		android:layout_width="248dp"
+		android:layout_height="31dp"
+		android:layout_marginLeft="65dp"
+		android:layout_marginTop="739dp"
+		android:text="@string/_don_t_have_an_account__register_string"
+		android:textColor="@color/_don_t_have_an_account__register_color"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/_forgot_password"
+		android:layout_width="129dp"
+		android:layout_height="31dp"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginLeft="228dp"
+		android:layout_marginTop="608dp"
+		android:gravity="center"
+		android:text="@string/_forgot_password_string"
+		android:textColor="@color/_don_t_have_an_account__register_color"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<TextView
+		android:id="@+id/login"
+		android:layout_width="155dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="304dp"
+		android:text="@string/login_string"
+		android:textColor="@color/login_color"
+		android:textSize="36sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.148"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
