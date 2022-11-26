@@ -32,4 +32,14 @@
 	<color name="border_color">#ffffff</color>
     <color name="darkgeen">#003300</color>
     <color name="trans_gray">#CED4D3</color>
+	<color name="_bg__seat_color">#2C2C2C</color>
+	<color name="rectangle_2_color">#666666</color>
+	<color name="pickup_point__color">#FFFFFF</color>
+	<color name="rectangle_3_color">#2EDABB</color>
+	<color name="confirm_ek1_color">#000000</color>
+
+	<color name="_bg__book_color">#2C2C2C</color>
+	<color name="recommended_route__color">#FFFFFF</color>
+	<color name="button_container_color">#2EDABB</color>
+	<color name="book_color">#000000</color>
 </resources>

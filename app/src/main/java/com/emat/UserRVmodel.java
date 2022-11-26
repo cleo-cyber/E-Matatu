@@ -12,12 +12,13 @@ public class UserRVmodel implements Parcelable {
     private String Destination;
     private String PickUpPoint;
 
+
     public UserRVmodel(String name, String email, int phoneNumber, String destination, String pickUpPoint) {
         this.name = name;
         this.email = email;
-        PhoneNumber = phoneNumber;
-        Destination = destination;
-        PickUpPoint = pickUpPoint;
+        this.PhoneNumber = phoneNumber;
+        this.Destination = destination;
+        this.PickUpPoint = pickUpPoint;
     }
 
     protected UserRVmodel(Parcel in) {

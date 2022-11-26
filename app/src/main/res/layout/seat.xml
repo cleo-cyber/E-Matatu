@@ -1,0 +1,393 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayout4"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/_bg__seat"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/_bg__seat_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<View
+		android:id="@+id/rectangle_2"
+		android:layout_width="match_parent"
+		android:layout_height="504dp"
+		android:layout_marginTop="370dp"
+		android:background="@drawable/rectangle_2_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/group_8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="430dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/pickup_point_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="51dp"
+			android:text="@string/pickup_point__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/pickup_point__ek1"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="179dp"
+			android:layout_marginTop="47dp"
+			android:text="@string/pickup_point__ek1_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/destination2"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="180dp"
+			android:layout_marginTop="86dp"
+			android:text="@string/pickup_point__ek2_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/reg"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="180dp"
+			android:layout_marginTop="121dp"
+			android:text="@string/pickup_point__ek3_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/dept"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="179dp"
+			android:layout_marginTop="156dp"
+			android:text="@string/pickup_point__ek4_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/seat"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="180dp"
+			android:layout_marginTop="191dp"
+			android:text="@string/pickup_point__ek5_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/price"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="180dp"
+			android:layout_marginTop="226dp"
+			android:text="@string/pickup_point__ek6_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/dropoff_point_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="86dp"
+			android:text="@string/dropoff_point__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/vehicle_reg_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="121dp"
+			android:text="@string/vehicle_reg__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/departure_time_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="156dp"
+			android:text="@string/departure_time__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/seat_number_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="191dp"
+			android:text="@string/seat_number__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/price_"
+			android:layout_width="141dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="226dp"
+			android:text="@string/price__string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="14sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/group_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:layout_marginStart="62dp"
+			android:layout_marginTop="0dp">
+
+			<TextView
+				android:id="@+id/generated_receipt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:text="@string/generated_receipt_string"
+				android:textColor="@color/pickup_point__color"
+				android:textSize="28.9sp" />
+
+			<View
+				android:id="@+id/line_1"
+				android:layout_width="175dp"
+				android:layout_height="0.93dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="35dp"
+				android:background="@drawable/line_1_shape" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<ImageView
+		android:id="@+id/download_1"
+		android:layout_width="180dp"
+		android:layout_height="306dp"
+		android:layout_marginStart="170dp"
+		android:layout_marginTop="50dp"
+		android:contentDescription="download_1"
+		android:src="@drawable/download_1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<RelativeLayout
+		android:id="@+id/group_6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="710dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_3"
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:layout_marginStart="11dp"
+		android:layout_marginTop="117dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<Spinner
+			android:id="@+id/rectangle_4"
+			android:layout_width="134dp"
+			android:layout_height="30dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/rectangle_4_shape" />
+
+		<TextView
+			android:id="@+id/row_number"
+			android:layout_width="78dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:text="@string/row_number_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/dropdown"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="104dp"
+			android:layout_marginTop="14dp">
+
+			<ImageView
+				android:id="@+id/vector"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:contentDescription="vector"
+				android:src="@drawable/vector_1" />
+
+			<ImageView
+				android:id="@+id/vector_ek1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="9.7dp"
+				android:layout_marginTop="11.68dp"
+				android:contentDescription="vector_2"
+				android:src="@drawable/vector_2" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="11dp"
+		android:layout_marginTop="177dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<Spinner
+			android:id="@+id/rectangle_4_ek1"
+			android:layout_width="134dp"
+			android:layout_height="30dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/rectangle_4_ek1_shape" />
+
+		<TextView
+			android:id="@+id/column_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:text="@string/column_number_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/dropdown_ek1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="104dp"
+			android:layout_marginTop="14dp">
+
+			<ImageView
+				android:id="@+id/vector_1"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:contentDescription="vector_1"
+				android:src="@drawable/vector_1" />
+
+			<ImageView
+				android:id="@+id/vector_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="9.7dp"
+				android:layout_marginTop="11.68dp"
+				android:contentDescription="vector_2"
+				android:src="@drawable/vector_2" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_5"
+		android:layout_width="127dp"
+		android:layout_height="40dp"
+		android:layout_marginStart="11dp"
+		android:layout_marginTop="77dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/seat_booking"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:text="@string/seat_booking_string"
+			android:textColor="@color/pickup_point__color"
+			android:textSize="18sp" />
+
+	</RelativeLayout>
+
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="100dp"
+		android:backgroundTint="@color/teal_200"
+		android:text="@string/confirm"
+		android:textColor="@color/black"
+		app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
+		app:layout_constraintEnd_toStartOf="@+id/download_1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/group_4" />
+
+	<ImageView
+		android:id="@+id/image_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="368dp"
+		android:layout_marginBottom="36dp"
+		app:layout_constraintBottom_toTopOf="@+id/group_5"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+	<View
+		android:id="@+id/rectangle_3"
+		android:layout_width="140dp"
+		android:layout_height="30dp"
+		android:background="@drawable/rectangle_3_shape"
+		app:layout_constraintBottom_toBottomOf="@+id/_bg__seat"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/group_8" />
+
+	<TextView
+		android:id="@+id/confirm"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/confirm_string"
+		android:textColor="@color/pickup_point__color"
+		android:textSize="19.58sp"
+		app:layout_constraintBottom_toBottomOf="@+id/_bg__seat"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/group_8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

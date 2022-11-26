@@ -75,9 +75,9 @@ public class Profile extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         loadingPB.setVisibility(View.GONE);
-                       root.child("UserProfile").setValue(userRVmodel);
-                       Toast.makeText(Profile.this,"Update successful",Toast.LENGTH_SHORT).show();
-                       startActivity(new Intent(Profile.this,MainActivity.class));
+                        root.child("UserProfile").setValue(userRVmodel);
+                        Toast.makeText(Profile.this,"Update successful",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Profile.this,MainActivity.class));
                     }
 
                     @Override

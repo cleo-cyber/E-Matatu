@@ -7,15 +7,15 @@
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content">
 
+
 	<View
 		android:id="@+id/__bg__onboarding_1_ek2"
-		android:layout_width="443dp"
+		android:layout_width="match_parent"
 		android:layout_height="898dp"
+		android:layout_marginStart="0dp"
 		android:background="@drawable/majestic_lukas_ipsd4z55_rw_unsplash_1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
-
-
 
 	<TextView
 		android:id="@+id/e_mat"
@@ -29,44 +29,37 @@
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintStart_toStartOf="parent" />
 
-	<TextView
-		android:id="@+id/text"
-		android:textSize="18sp"
-		android:textColor="@color/text_color"
-		android:layout_marginLeft="143dp"
-		android:layout_marginTop="62dp"
-		android:layout_width="23dp"
-		android:layout_height="35dp"
-		android:text="@string/text_string"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintStart_toStartOf="parent" />
 
 	<TextView
 		android:id="@+id/convenient_cheap_rides"
 		android:layout_width="310dp"
 		android:layout_height="110dp"
-		android:layout_marginStart="28dp"
-		android:layout_marginTop="546dp"
+		android:layout_marginTop="50dp"
 		android:text="@string/convenient_cheap_rides_string"
 		android:textColor="@color/text_color"
 		android:textSize="32sp"
 		app:layout_constraintBottom_toTopOf="@+id/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device_"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.306"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="1.0" />
+		app:layout_constraintVertical_bias="0.625" />
 
 	<TextView
 		android:id="@+id/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device_"
-		android:layout_width="354dp"
-		android:layout_height="52dp"
-		android:layout_marginTop="632dp"
+		android:layout_width="294dp"
+		android:layout_height="38dp"
+		android:layout_marginTop="520dp"
+		android:layout_marginBottom="326dp"
 		android:text="@string/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device__string"
 		android:textColor="@color/text_color"
 		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="@+id/__bg__onboarding_1_ek2"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.401"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
 
 	<RelativeLayout
 		android:id="@+id/frame_1"
@@ -85,30 +78,32 @@
 			android:layout_marginStart="10dp"
 			android:layout_marginTop="10dp">
 
-<!--			<View-->
-<!--				android:id="@+id/button_container"-->
-<!--				android:layout_width="335dp"-->
-<!--				android:layout_height="40dp"-->
-<!--				android:layout_marginStart="0dp"-->
-<!--				android:layout_marginTop="0dp"-->
-<!--				android:background="@drawable/button_container_shape" />-->
-
-			<TextView
-				android:id="@+id/button"
-				android:layout_width="349dp"
-				android:layout_height="53dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="-3dp"
-				android:layout_marginTop="0dp"
-				android:gravity="center"
-				android:text="@string/button_string"
-				android:textColor="@color/text_color"
-				android:textSize="18sp"
-				android:background="@drawable/button_container_shape" />
+			<!--			<View-->
+			<!--				android:id="@+id/button_container"-->
+			<!--				android:layout_width="335dp"-->
+			<!--				android:layout_height="40dp"-->
+			<!--				android:layout_marginStart="0dp"-->
+			<!--				android:layout_marginTop="0dp"-->
+			<!--				android:background="@drawable/button_container_shape" />-->
 
 		</RelativeLayout>
 
 	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/button"
+		android:layout_width="349dp"
+		android:layout_height="53dp"
+		android:layout_gravity="center_horizontal|center"
+		android:background="@drawable/button_container_shape"
+		android:gravity="center"
+		android:text="@string/button_string"
+		android:textColor="@color/text_color"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/book_timely___pocket_friendly_rides_remotely_from_your_mobile_device_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkgeen"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="fill_parent"
+            android:autofillHints="emailAddress"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_input"
+            android:textAlignment="center"
+            android:padding="10dp"
+
+
+            />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

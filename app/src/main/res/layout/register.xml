@@ -9,8 +9,8 @@
 
 	<View
 		android:id="@+id/_bg__register_ek2"
-		android:layout_width="443dp"
-		android:layout_height="898dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
 		android:background="@drawable/_bg__register_ek2_shape"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
@@ -100,32 +100,54 @@
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 
+	<TextView
+		android:id="@+id/label_ek1"
+		android:layout_width="100dp"
+		android:layout_height="21dp"
+		android:layout_marginTop="452dp"
+		android:layout_marginEnd="256dp"
+		android:text="@string/email_address"
+		android:textColor="@color/label_color"
+		android:textSize="12sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
 	<EditText
 		android:id="@+id/placeholder_ek1"
 		android:layout_width="314dp"
-		android:layout_height="50dp"
+		android:layout_height="45dp"
 		android:layout_marginTop="476dp"
 		android:background="@drawable/input_container_ek1_shape"
 		android:inputType="textEmailAddress"
 		android:textColor="@color/text_ek1_color"
 		android:textSize="20dp"
 		android:textAlignment="center"
-		android:hint="Email"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.556"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 
+
+	<TextView
+		android:layout_width="100dp"
+		android:layout_height="22dp"
+		android:layout_marginTop="548dp"
+		android:layout_marginEnd="256dp"
+		android:text="@string/password"
+		android:textColor="@color/label_color"
+		android:textSize="12sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
 	<EditText
 		android:id="@+id/placeholder_ek3"
 		android:layout_width="314dp"
-		android:layout_height="50dp"
+		android:layout_height="45dp"
 		android:layout_marginTop="52dp"
 		android:background="@drawable/input_container_ek1_shape"
 		android:inputType="textPassword"
 		android:textColor="@color/text_ek1_color"
 		android:textSize="20dp"
-		android:hint="Password"
 		android:textAlignment="center"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.556"

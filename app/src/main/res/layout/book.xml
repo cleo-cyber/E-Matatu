@@ -1,0 +1,335 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayout3"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<View
+		android:id="@+id/_bg__book"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="0dp"
+		android:layout_marginTop="0dp"
+		android:background="@drawable/_bg__book_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<View
+		android:id="@+id/rectangle_2"
+		android:layout_width="match_parent"
+		android:layout_height="522dp"
+		android:layout_marginTop="350dp"
+		android:background="@drawable/rectangle_2_shape"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/group_9"
+		android:layout_width="190dp"
+		android:layout_height="140dp"
+		android:layout_marginStart="36dp"
+		android:layout_marginTop="120dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/recommended_route_"
+			android:layout_width="187dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:text="recommended_route"
+			android:textColor="@color/recommended_route__color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp"
+			android:text="pickup"
+			android:textColor="@color/white" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="60dp"
+			android:text="drop_off"
+			android:textColor="@color/white" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="90dp"
+			android:text="vehicle"
+			android:textColor="@color/white" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="120dp"
+			android:text="price"
+			android:textColor="@color/white" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/buttons"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="670dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+<!--		<View-->
+<!--			android:id="@+id/button_container"-->
+<!--			android:layout_width="335dp"-->
+<!--			android:layout_height="match_parent"-->
+<!--			android:layout_marginStart="0dp"-->
+<!--			android:layout_marginTop="0dp"-->
+<!--			android:background="@drawable/button_container_shape" />-->
+
+		<TextView
+			android:id="@+id/button"
+			android:layout_width="349dp"
+			android:layout_height="53dp"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginStart="-3dp"
+			android:layout_marginTop="0dp"
+			android:gravity="center"
+			android:text="confirm"
+			android:textColor="@color/recommended_route__color"
+			android:textSize="18sp"
+			android:background="@drawable/button_container_shape"/>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/inputs"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="537dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/label"
+			android:layout_width="47dp"
+			android:layout_height="22dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="0dp"
+			android:text="vehicle"
+			android:textColor="@color/teal_200"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/input"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="19dp">
+
+			<Spinner
+				android:id="@+id/vehicle_regist_"
+				android:layout_width="335dp"
+				android:layout_height="40dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/input_container_shape" />
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_7"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="40dp"
+		android:layout_marginTop="608dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/price_generated"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginStart="18dp"
+			android:layout_marginTop="0dp"
+			android:gravity="center"
+			android:text="Departure time"
+			android:textColor="@color/teal_200"
+			android:textSize="12sp" />
+
+		<Spinner
+			android:id="@+id/input_container_ek1"
+			android:layout_width="97dp"
+			android:layout_height="40dp"
+			android:layout_marginStart="15dp"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/input_container_ek1_shape" />
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/inputs_ek1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="466dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/label_ek1"
+			android:layout_width="74dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="0dp"
+			android:text="Drop-off"
+			android:textColor="@color/teal_200"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/input_ek1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="19dp">
+
+			<Spinner
+				android:id="@+id/input_container_ek2"
+				android:layout_width="335dp"
+				android:layout_height="40dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/input_container_ek2_shape" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/inputs_ek2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="395dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/label_ek2"
+			android:layout_width="68dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="0dp"
+			android:text="pickup"
+			android:textColor="@color/teal_200"
+			android:textSize="12sp" />
+
+
+		<RelativeLayout
+			android:id="@+id/input_ek2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="19dp">
+
+			<Spinner
+				android:id="@+id/input_container_ek3"
+				android:layout_width="335dp"
+				android:layout_height="40dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/input_container_ek3_shape" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="36dp"
+		android:layout_marginTop="50dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/home"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:text="Home"
+			android:textColor="@color/teal_200"
+			android:textSize="36sp" />
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/group_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="36dp"
+		android:layout_marginTop="283dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<View
+			android:id="@+id/rectangle_1"
+			android:layout_width="96dp"
+			android:layout_height="42dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:background="@drawable/rectangle_1_shape" />
+
+		<TextView
+			android:id="@+id/book"
+			android:layout_width="55dp"
+			android:layout_height="31dp"
+			android:layout_marginStart="29dp"
+			android:layout_marginTop="10dp"
+			android:text="book"
+			android:textColor="@color/white"
+			android:textSize="14sp" />
+
+	</RelativeLayout>
+	<ImageView
+		android:id="@+id/image_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="48dp"
+		app:layout_constraintBottom_toTopOf="@+id/group_1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.085"
+		app:layout_constraintStart_toStartOf="parent"
+		app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+	<Spinner
+		android:id="@+id/text_input_start_icon"
+		android:layout_width="97dp"
+		android:layout_height="40dp"
+		android:layout_marginEnd="56dp"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/input_container_ek2_shape"
+		app:layout_constraintBottom_toTopOf="@+id/buttons"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

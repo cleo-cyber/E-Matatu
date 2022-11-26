@@ -55,39 +55,36 @@ public class EditProfile extends AppCompatActivity {
         }
 
         DatabaseReference root=db.getReference();
-        editButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingPB.setVisibility(View.VISIBLE);
+        editButton.setOnClickListener(v -> {
+            loadingPB.setVisibility(View.VISIBLE);
 
-                String name=nameInput.getText().toString();
-                String email=emailInput.getText().toString();
-                String Destination=destinationInput.getText().toString();
-                String PickUpPoint=pickUpPointInput.getText().toString();
-                int PhoneNumber=Integer.parseInt(phoneNumberInput.getText().toString());
+            String name=nameInput.getText().toString();
+            String email=emailInput.getText().toString();
+            String Destination=destinationInput.getText().toString();
+            String PickUpPoint=pickUpPointInput.getText().toString();
+            int PhoneNumber=Integer.parseInt(phoneNumberInput.getText().toString());
 
-                HashMap<String,Object> user=new HashMap<>();
+            HashMap<String,Object> user=new HashMap<>();
 
-                user.put("name",name);
-                user.put("email",email);
-                user.put("Destination",Destination);
-                user.put("PhoneNumber",PhoneNumber);
-                user.put("PickUpPoint",PickUpPoint);
+            user.put("name",name);
+            user.put("email",email);
+            user.put("Destination",Destination);
+            user.put("PhoneNumber",PhoneNumber);
+            user.put("PickUpPoint",PickUpPoint);
 
-                root.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        loadingPB.setVisibility(View.GONE);
-                        root.updateChildren(user);
-                    }
+            root.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    loadingPB.setVisibility(View.GONE);
+                    root.updateChildren(user);
+                }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                        Toast.makeText(EditProfile.this, "Failed to update user", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Toast.makeText(EditProfile.this, "Failed to update user", Toast.LENGTH_SHORT).show();
+                }
+            });
 
-            }
         });
     }
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- onboarding_1 strings -->
 
 	<string name="app_name">E-mat</string>
 	<string name="ek_img_content">ExportKit Image</string>
@@ -114,4 +113,66 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="delete_profile">delete profile</string>
     <string name="Delete_profile">Delete profile</string>
+
+    <string name="select">Select Item</string>
+    <string name="welcome_text">BOOKING</string>
+    <string name="point">Select Pickup Point</string>
+    <string name="drop">Select Dropoff Point</string>
+    <string name="time">Select Pickup Time</string>
+    <string name="bus">Select a Bus</string>
+    <string name="submit">Submit</string>
+	<string name="recommended_route__string">Recommended route:</string>
+	<string name="price_generated_string">price-generated</string>
+	<string name="home_string">Home</string>
+	<string name="book_string">book</string>
+	<string name="pickup_point__string">Pickup-point:</string>
+	<string name="pickup_point__ek1_string">Pickup-point:</string>
+	<string name="pickup_point__ek2_string">Pickup-point:</string>
+	<string name="pickup_point__ek3_string">Pickup-point:</string>
+	<string name="pickup_point__ek4_string">Pickup-point:</string>
+	<string name="pickup_point__ek5_string">Pickup-point:</string>
+	<string name="pickup_point__ek6_string">Pickup-point:</string>
+	<string name="dropoff_point__string">Dropoff-point:</string>
+	<string name="vehicle_reg__string">Vehicle-reg:</string>
+	<string name="departure_time__string">Departure-time:</string>
+	<string name="seat_number__string">Seat-number:</string>
+	<string name="price__string">Price:</string>
+	<string name="generated_receipt_string">Generated receipt</string>
+	<string name="confirm_string">CONFIRM</string>
+	<string name="row_number_string">Row number</string>
+	<string name="column_number_string">Column number</string>
+	<string name="seat_booking_string">SEAT BOOKING </string>
+	<string name="confirm_ek1_string">confirm</string>
+    <string name="vehicle">Vehicle</string>
+	<string name="price">Price</string>
+	<string name="drop_off">Drop-off</string>
+	<string name="pickup">Pickup</string>
+	<string name="confirm">CONFIRM</string>
+	<string name="booking">Booking</string>
+    <string name="cancel">go back</string>
+
+    <string-array name="pickup_points">
+        <item>Select your pickup point</item>
+        <item>CUEA</item><item>MMU</item><item>COOPERATIVE</item><item>MARIST</item>
+    </string-array>
+	<string-array name="dropoff_points">
+		<item>Select your drop off point</item>
+		<item>Tuskys</item><item>Tumaini</item><item>Maasai Lodge</item><item>MMU</item><item>CUEA</item><item>Galleria</item><item>Barracks</item><item>T-Mall</item><item>Madaraka</item><item>Nyayo</item>
+	</string-array>
+	<string-array name="Vehicles">
+		<item>Available Vehicles</item>
+		<item>KCB</item><item>KCD</item><item>KCA</item><item>KCF</item>
+	</string-array>
+	<string-array name="Row_number">
+			<item>Row</item>
+		<item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item>
+	</string-array>
+	<string-array name="Column_number">
+		<item>Column</item>
+		<item>A</item><item>B</item><item>C</item><item>D</item>
+	</string-array>
+	<string-array name="departure_time">
+		<item>Time</item>
+		<item>7:00AM</item><item>10:00AM</item><item>1:00PM</item><item>4:00PM</item>
+	</string-array>
 </resources>
