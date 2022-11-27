@@ -1,22 +1,35 @@
 package com.emat;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
 public class book_activity extends Activity {
 	private FirebaseDatabase db= FirebaseDatabase.getInstance();
 	private DatabaseReference root=db.getReference().child("Bookings");
+	private DatabaseReference mroot=db.getReference().child("UserProfile");
+	private DatabaseReference pay=db.getReference().child("Payment");
+	SmsManager smsManager;
+	TextView pick,drop,veh,pri,book;
+	@SuppressLint("MissingInflatedId")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -27,8 +40,24 @@ public class book_activity extends Activity {
 		Spinner dropoff=(Spinner)findViewById(R.id.input_container_ek2);
 		Spinner vehicle=(Spinner)findViewById(R.id.vehicle_regist_);
 		Spinner dep_time=(Spinner)findViewById(R.id.input_container_ek1);
-		TextView confirm =  findViewById(R.id.button);
 
+
+		TextView confirm =  findViewById(R.id.button);
+		pick=findViewById(R.id.pick);
+		drop=(TextView) findViewById(R.id.drop);
+		veh=(TextView) findViewById(R.id.veh);
+		pri=(TextView) findViewById(R.id.pri);
+		book=(TextView) findViewById(R.id.book);
+
+		smsManager=SmsManager.getDefault();
+
+		getDefaultBooking();
+		book.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				confirmBooking();
+			}
+		});
 		//PICKUP
 		ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.pickup_points, android.R.layout.simple_spinner_item);
 
@@ -83,6 +112,46 @@ public class book_activity extends Activity {
 //		});
 
 	
+	}
+
+	private void confirmBooking() {
+		Intent intent= new Intent(book_activity.this,EditProfile.class);
+		startActivity(intent);
+
+		Toast.makeText(this, "Booking Successful", Toast.LENGTH_SHORT).show();
+	}
+
+	private void getDefaultBooking() {
+		mroot.addValueEventListener(new ValueEventListener() {
+			@Override
+			public void onDataChange(@NonNull DataSnapshot snapshot) {
+				String pickUpPoint=snapshot.child("PickUpPoint").getValue(String.class);
+				String Email=snapshot.child("email").getValue(String.class);
+				String Destination=snapshot.child("Destination").getValue(String.class);
+
+				drop.setText(Destination);
+				pick.setText(pickUpPoint);
+			}
+
+			@Override
+			public void onCancelled(@NonNull DatabaseError error) {
+
+			}
+		});
+		pay.addValueEventListener(new ValueEventListener() {
+			@Override
+			public void onDataChange(@NonNull DataSnapshot snapshot) {
+				String amount= snapshot.child("Amount").getValue(String.class);
+				pri.setText(amount);
+			}
+
+			@Override
+			public void onCancelled(@NonNull DatabaseError error) {
+
+			}
+		});
+
+
 	}
 }
 	

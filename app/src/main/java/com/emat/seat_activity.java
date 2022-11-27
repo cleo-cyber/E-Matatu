@@ -30,8 +30,8 @@ public class seat_activity extends Activity {
 
 	private FirebaseDatabase data=FirebaseDatabase.getInstance();
 	private DatabaseReference mroot=data.getReference().child("Seats");
-	private DatabaseReference userProf=data.getReference().child("UserProfile");
-	private SmsManager smsManager;
+
+	SmsManager smsManager;
 
 	TextView pickuppoint; //pick up point
 	TextView dropoff; //drop off
@@ -42,16 +42,16 @@ public class seat_activity extends Activity {
 
 	Button confirm;
 	TextView submit;
-
+	Spinner row,column;
 	@SuppressLint("MissingInflatedId")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.seat);
-
-		Spinner row=findViewById(R.id.rectangle_4);
-		Spinner column=findViewById(R.id.rectangle_4_ek1);
+//		GET VIEWS
+		row=findViewById(R.id.rectangle_4);
+		column=findViewById(R.id.rectangle_4_ek1);
 		confirm = (Button) findViewById(R.id.button2);
 		pickuppoint=findViewById(R.id.pickup_point__ek1);
 		dropoff=findViewById(R.id.destination2);
@@ -64,6 +64,7 @@ public class seat_activity extends Activity {
 
 		smsManager=SmsManager.getDefault();
 
+//		DROPDOWN
 		ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.Row_number, android.R.layout.simple_spinner_item);
 
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
@@ -74,42 +75,19 @@ public class seat_activity extends Activity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
 		column.setAdapter(columnadapter);
 		getDetails();
+
+//		BUTTONS
 		confirm.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				String roh = row.getSelectedItem().toString();
-				String col=column.getSelectedItem().toString();
 
-				HashMap<String,Object> seatie=new HashMap<>();
 
-				seatie.put("Row",roh);
-				seatie.put("Column",col);
-				mroot.setValue(seatie);
+				sendTodb();
 
 
 			}
 		});
-		submit.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				mroot.addValueEventListener(new ValueEventListener() {
-					@Override
-					public void onDataChange(@NonNull DataSnapshot snapshot) {
-						String row=snapshot.child("Row").getValue(String.class);
-						String column=snapshot.child("Column").getValue(String.class);
-						String SeatNumber=row+column;
-						String reg= snapshot.child("Vehicle").getValue(String.class);
-						smsManager.sendTextMessage("+254768350329",null,"Your travelling details are as follows:Vehicle:"+reg+"\nSeat number"+SeatNumber ,null,null);
-						Toast.makeText(seat_activity.this, "Sucessfull booking", Toast.LENGTH_SHORT).show();
-					}
 
-					@Override
-					public void onCancelled(@NonNull DatabaseError error) {
-
-					}
-				});
-			}
-		});
 //		cancel.setOnClickListener(v -> {
 //			Intent intent=new Intent(this, book_activity.class );
 //			startActivity(intent);
@@ -125,14 +103,33 @@ public class seat_activity extends Activity {
 
 
 	}
+//	METHODS
+//SEND data to database
+	private void sendTodb() {
 
+		String roh = row.getSelectedItem().toString();
+		String col=column.getSelectedItem().toString();
+		String seatNumber=roh+col;
+		HashMap<String,Object> seatie=new HashMap<>();
+
+		seatie.put("Row",roh);
+		seatie.put("Column",col);
+		mroot.setValue(seatie);
+		Toast.makeText(seat_activity.this, "Booking Successful", Toast.LENGTH_SHORT).show();
+
+
+	}
+
+
+
+//	Retrieve db data
 	private void getDetails() {
 		root.addValueEventListener(new ValueEventListener() {
 			@Override
 			public void onDataChange(@NonNull DataSnapshot snapshot) {
 				String pickup=snapshot.child("pickuppoint").getValue(String.class);
 				String drop=snapshot.child("DropPoint").getValue(String.class);
-				String vehc=snapshot.child("vehicle").getValue(String.class);
+				String vehc=snapshot.child("Vehicle").getValue(String.class);
 				String time=snapshot.child("Departure Time").getValue(String.class);
 
 				pickuppoint.setText(pickup);
@@ -152,8 +149,8 @@ public class seat_activity extends Activity {
 			String row=snapshot.child("Row").getValue(String.class);
 			String column=snapshot.child("Column").getValue(String.class);
 			String SeatNumber=row+column;
-			String reg= snapshot.child("Vehicle").getValue(String.class);
 			seat.setText(SeatNumber);
+
 
 		}
 
